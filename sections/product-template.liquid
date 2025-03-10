@@ -1,0 +1,1 @@
+<div class="product-template"><h1>{{ product.title }}</h1><div>{{ product.price | money }}</div><div>{{ product.description }}</div><form action="/cart/add" method="post"><input type="hidden" name="id" value="{{ product.variants.first.id }}"><button type="submit">Add to cart</button></form></div>
